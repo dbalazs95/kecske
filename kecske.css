@@ -1,0 +1,45 @@
+header {
+    grid-area: h;
+}
+
+#bal {
+    grid-area: b;
+}
+
+#csonak {
+    grid-area: c;
+}
+
+#jobb {
+    grid-area: j;
+}
+
+footer {
+    grid-area: f;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    'h h h'
+    'b c j'
+    'f f f';
+    grid-gap: 10px;
+                    
+}
+main, header, aside, footer, article {
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.kiemel {
+    border: 2px solid red;
+    cursor: grab;
+}
+
+img {
+    width: 100px;
+}
